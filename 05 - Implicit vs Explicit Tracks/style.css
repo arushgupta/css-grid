@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 200px 400px;
+    /* Even though the rows aren't defined they appear in our html because
+     they have been created implicitly */
+    grid-template-rows: 50px 100px;
+    /* The above line now makes our grid completely explicit. On adding rows 5 & 6
+     we can now see that they are defined implicitly */
+    grid-auto-rows: 125px 50px;
+    /* The above line of code will set the height of the implicit rows */
+    grid-auto-columns: 100px;
+    /* Doesn't do anything yet, look for more in the next one! */
+}
