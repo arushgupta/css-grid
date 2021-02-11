@@ -1,0 +1,10 @@
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 400px 200px;
+  /* grid-auto-flow: row; /* Does nothing as it is the default setting */
+  grid-auto-flow: column;
+  /* will cause a horizontal scroll */
+  grid-auto-columns: 100px;
+  /* All implicitly created columns will be 100px wide */
+}
