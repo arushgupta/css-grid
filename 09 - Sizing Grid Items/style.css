@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.item9 {
+  background: mistyrose;
+  grid-column: span 10;
+  /* This will force the grid to make implicit columns if span num is greater than the explicit grid columns */
+  grid-row: span 2;
+}
