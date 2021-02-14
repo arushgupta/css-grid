@@ -21,7 +21,14 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fill, 150px);
+      /* The content flows out of an item, to prevent that we use minmax()
+      grid-template-columns: repeat(auto-fill, 100px); */
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      /* Using auto-fit with minmax() will make the columns/rows fit the entire grid
+      if there is space where as auto-fill will leave the empty space as is */
+      /* grid-template-columns: auto 150px 150px 150px;
+      The above can be improved by using fit-content() */
+      /* grid-template-columns: fit-content(100px) 150px 150px 150px; */
     }
   </style>
 </body>
