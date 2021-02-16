@@ -1,0 +1,39 @@
+/*
+Use the following for more detailed understanding of different values
+https://css-tricks.com/snippets/css/complete-guide-grid/
+  justify-items:
+  align-items:
+
+  justify-content:
+  align-content:
+
+  align-self:
+  justify-self:
+
+  justify-* is x-axis
+  align-* is y-axis
+*/
+.container {
+  display: grid;
+  grid-gap: 20px;
+  height: 500px;
+  border: 10px solid var(--yellow);
+  grid-template-columns: repeat(5, 130px);
+  /* justify-items: stretch;  Default value */
+  /* justify-items: center;
+  align-items: center;
+  justify-items and align-items can be also be written as */
+  place-items: stretch stretch;
+  justify-content: space-between;
+  /* helps remove spaces from the ends of the grid */
+  align-content: space-between;
+}
+
+.itm {
+  background: white;
+}
+
+.itm5 {
+  justify-self: center;
+  align-self: center;
+}
