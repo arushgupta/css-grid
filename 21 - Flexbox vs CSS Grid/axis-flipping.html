@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Arush Gupta">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="flip.css">
   <title>Flexbox vs CSS Grid: Axis Flipping!</title>
 </head>
 
@@ -12,12 +14,7 @@
 
   <!-- Flipping the direction of columns -->
 
-  <script>
-    function flip(e) {
-      const flipper = document.querySelector('.flipper');
-      flipper.classList.toggle('flip');
-    }
-  </script>
+  <script src="flip.js"></script>
 
   <button onClick="flip()">Flip It</button>
   <div class="flipper">
@@ -31,11 +28,7 @@
     <div class="item">8</div>
     <div class="item">9</div>
     <div class="item">10</div>
-
   </div>
-
-  <style>
-  </style>
 </body>
 
 </html>
