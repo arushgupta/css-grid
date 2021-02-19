@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Arush Gupta">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
   <title>Flexbox vs CSS Grid: Unknown Content Size!</title>
@@ -24,6 +25,10 @@
   <style>
     .known {
       margin: 100px 0;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      justify-content: center;
+      grid-gap: 20px;
     }
   </style>
 
